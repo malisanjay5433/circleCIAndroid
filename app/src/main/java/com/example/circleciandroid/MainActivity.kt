@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
     private val appSec = "c5c3d232-492d-4602-a3e5-ef62df8e6356";
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        print("Welcome to appCenter");
         AppCenter.start(
             application, this.appSec,
             Analytics::class.java, Crashes::class.java
